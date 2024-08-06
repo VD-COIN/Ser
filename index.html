@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DART 🎯</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .logo { font-size: 3rem; }
+    </style>
+</head>
+<body>
+    <div class="logo">DART 🎯</div>
+    <script>
+        setTimeout(() => {
+            const isNewUser = localStorage.getItem('isNewUser');
+            if (isNewUser === 'true') {
+                window.location.href = 'sign-in.html';
+            } else {
+                window.location.href = 'insert.html';
+            }
+        }, 7000);
+    </script>
+</body>
+</html>
